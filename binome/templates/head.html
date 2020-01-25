@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	{% load static %}
+	{% load sass_tags %}
+	<title>Random Binome</title>
+	<meta name="keywords" content="Random Binome" />
+	<meta name="description" content="A simple website showcasting a Random Binome selector" />
+	<meta name="author" content="Bastien Sozeau" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 minimal-ui">
+	<meta property="og:image" content="{% static 'img/screenshot.png' %}"/>
+	<meta property="og:title" content="Random Binome"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://binome.sozoo.fr/"/>
+	<link rel="icon" href="{% static 'img/favicon.png' %}" />
+	<link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Public+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+	<script type='text/javascript' src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+	<link rel="stylesheet" href="{% static 'css/site-style.css' %}" type="text/css" />
+	<link href="{% sass_src 'sass/style.sass' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header id="header">
+		<div class="logo">Random Binome</div>		
+		<div class="bs--menu bs--menu-border">
+		  <a class="bs--menu-item" href="/admin"><div class="icon-gauge"></div>Dashboard</a>
+		  <a class="bs--menu-item" href="/"><div class="icon-home"></div>Homepage</a>
+		  <a class="bs--menu-item" href="https://github.com/BastienSozeau/Random_Binome" target="_blank"><div class="icon-github"></div>Github</a>
+		  <a class="bs--menu-item" href="https://github.com/BastienSozeau/Random_Binome/archive/master.zip" target="_blank"><div class="icon-download"></div>Download</a>
+		</div>
+
+	</header>
+	<div class="wrapper">
+		<form action="submit" method="post">{% csrf_token %}
+              <div>
+                <label for="select_Imane">Imane</label>
+                <select id="select_Imane" name="select_Imane">
+                  <optgroup label="TrueFalse_Imane">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Mohamed D">Mohamed D</label>
+                <select id="select_Mohamed D" name="select_Mohamed D">
+                  <optgroup label="TrueFalse_Mohamed D">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Yassine">Yassine</label>
+                <select id="select_Yassine" name="select_Yassine">
+                  <optgroup label="TrueFalse_Yassine">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Luis Felipe">Luis Felipe</label>
+                <select id="select_Luis Felipe" name="select_Luis Felipe">
+                  <optgroup label="TrueFalse_Luis Felipe">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Cécile">Cécile</label>
+                <select id="select_Cécile" name="select_Cécile">
+                  <optgroup label="TrueFalse_Cécile">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Marc-Henri">Marc-Henri</label>
+                <select id="select_Marc-Henri" name="select_Marc-Henri">
+                  <optgroup label="TrueFalse_Marc-Henri">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Gaëtan">Gaëtan</label>
+                <select id="select_Gaëtan" name="select_Gaëtan">
+                  <optgroup label="TrueFalse_Gaëtan">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Alexandre">Alexandre</label>
+                <select id="select_Alexandre" name="select_Alexandre">
+                  <optgroup label="TrueFalse_Alexandre">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Tony">Tony</label>
+                <select id="select_Tony" name="select_Tony">
+                  <optgroup label="TrueFalse_Tony">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Emmanuelle">Emmanuelle</label>
+                <select id="select_Emmanuelle" name="select_Emmanuelle">
+                  <optgroup label="TrueFalse_Emmanuelle">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Nour">Nour</label>
+                <select id="select_Nour" name="select_Nour">
+                  <optgroup label="TrueFalse_Nour">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Bastien">Bastien</label>
+                <select id="select_Bastien" name="select_Bastien">
+                  <optgroup label="TrueFalse_Bastien">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Mohamed S">Mohamed S</label>
+                <select id="select_Mohamed S" name="select_Mohamed S">
+                  <optgroup label="TrueFalse_Mohamed S">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Mathusha">Mathusha</label>
+                <select id="select_Mathusha" name="select_Mathusha">
+                  <optgroup label="TrueFalse_Mathusha">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Laien">Laien</label>
+                <select id="select_Laien" name="select_Laien">
+                  <optgroup label="TrueFalse_Laien">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Josef">Josef</label>
+                <select id="select_Josef" name="select_Josef">
+                  <optgroup label="TrueFalse_Josef">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="select_Nadia">Nadia</label>
+                <select id="select_Nadia" name="select_Nadia">
+                  <optgroup label="TrueFalse_Nadia">
+                    <option>Disponible</option>
+                    <option>Non disponible</option>
+                  </optgroup>
+                </select>
+              </div>
+		    <input type="submit" value="Submit">
+		</form>
